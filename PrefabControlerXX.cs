@@ -53,12 +53,11 @@ public class PrefabControlerXX : MonoBehaviour
 }
     void OnTriggerEnter2D(Collider2D col){
         if(col.CompareTag("Player")){
-            Debug.Log(col.gameObject.name);
+            //Debug.Log(col.gameObject.name);
             GameManager.Instance.GameOver();
         }
     }
     public void DestroyBlocks(){
-        Debug.Log("Destroy");
         Destroy(gameObject);
     }
 }
